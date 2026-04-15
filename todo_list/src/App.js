@@ -1,7 +1,7 @@
 import Header from "./Header";
 import Content from "./Content";
 import Footer from "./Footer";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import AddItem from "./AddItem";
 import SearchItem from "./SearchItem";
 
@@ -23,7 +23,20 @@ function App() {
   //     item: "Reading Practice",
   //   },
   // ]);
-  const [items, setItems] = useState(JSON.parse(localStorage.getItem("Todo_items")));
+
+  // const [items, setItems] = useState(JSON.parse(localStorage.getItem("Todo_items")));
+
+  const [items, setItems] = useState([]);
+
+  // useEffect(()=>{
+  //   console.log("Loading - useEffect")
+  // },[])
+
+  useEffect(() => {
+  const storedItems = JSON.parse(localStorage.getItem("Todo_items"));
+    if(storedItems)
+      setItems(storedItems);
+  }, []);
 
   const handleChange = (id) => {
     const listItems = items.map((item) =>
