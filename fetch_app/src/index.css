@@ -1,0 +1,46 @@
+.fetch-data {
+  display: flex;
+  gap: 10px;
+  font-size: 30px;
+  justify-content: space-evenly;
+  text-align: center;
+  background: #525252;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #3d72b4, #525252);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #3d72b4, #525252); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+body{
+  background: #8e9eab;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.box1,
+.box2,
+.box3 {
+  border: 2px solid black;
+  width: 200px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.active {
+  background-color: black;
+  color: white;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  margin-bottom: 10px;
+  border: 1px solid gray;
+  padding: 10px;
+  max-width: 100%;
+}
+
+pre {
+  white-space: pre-wrap;
+  word-break: break-word;
+}
