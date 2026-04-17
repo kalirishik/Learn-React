@@ -1,0 +1,25 @@
+{
+  "items": [
+    {
+      "id": "1",
+      "checked": false,
+      "item": "coding"
+    },
+    {
+      "id": "3",
+      "checked": true,
+      "item": "Writing"
+    },
+    {
+      "id": "4",
+      "checked": true,
+      "item": "Listening"
+    },
+    {
+      "id": "0yumluQVORc",
+      "checked": false,
+      "item": "java"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
