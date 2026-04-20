@@ -211,17 +211,25 @@ body {
   padding: 0.5rem;
   margin-right: 0.5rem;
   font-size: 1rem;
-  color: red;
   cursor: pointer;
 }
 
-.PostPage button:hover{
+
+.editButton {
+  background-color: blue;
+  color:white;
+}
+.editButton:hover {
+  background-color: white;
+  color:blue;
+}
+.deleteButton {
   background-color: red;
   color:white;
 }
-
-.editButton {
-  background-color: #333;
+.deleteButton:hover {
+  background-color: white;
+  color:red;
 }
 
 .statusMsg {
